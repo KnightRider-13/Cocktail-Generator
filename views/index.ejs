@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Random Cocktail Generator</title>
+  </head>
+  <body>
+    <div>
+      <h1>Find Your Perfect Cocktail!</h1>
+  </div>
+  <% if(!locals.cocktail) {%>
+    <div>
+      <form action="/random" method="POST">
+        <button class="btn" type="submit">
+          <h2 class="button__desc">Choose Your Poison</h2>
+          <img src="../Button.jpg" alt="">
+      </button>
+      </form>
+    </div>
+    <% } else { %>
+      <div class="cocktail">
+        <div class="cocktail__info">
+      <h2 class="cocktail__name"><%= cocktail.strDrink %></h2>
+      <img src="<%= cocktail.strDrinkThumb %>" alt="Preview Unavailable" class="cocktail__image">
+    </div>
+    <div class="cocktail__method">
+      <div>
+      <h3>Cocktail Catergory : </h3>
+      <p class="cocktail__catergory"><%= cocktail.strCategory %></p>
+      <h3>Cocktail Type : </h3>
+      <p class="cocktail__catergory"><%= cocktail.strAlcoholic%></p>
+      <h3>Cocktail Ingredients : </h3>
+      <ul>
+        <% for(let i = 1; i <= 15; i++) {%>
+          <% const ingredient = cocktail[`strIngredient${i}`]; %>
+          <% const measure = cocktail[`strMeasure${i}`]; %>
+          <% if (ingredient && measure) {%>
+        <li><%= measure %> <%= ingredient %></li>
+        <% }%>
+        <% } %>
+      </ul>
+      <h3>Cocktail Instructions : </h3>
+      <p class="cocktail__instructions"><%= cocktail.strInstructions%></p>
+      <form action="/refresh" method="GET">
+        <button class=" btn retry" type="submit">
+          <h3>Try Again!</h3>
+      </button>
+      </form>
+    </div>
+    </div>
+    <% } %>
+  </body>
+</html>
