@@ -36,12 +36,8 @@ h1 {
 
 .button__desc {
     color: red;
-    font-size: 60px;
+    font-size: 54px;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    max-height: 50vh;
-    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +48,8 @@ h1 {
 .btn {
     margin: 0 auto;
     margin-top: 80px;
-    max-height: 25vh;
+    height: 100%;
+    max-height: 800px;
     padding: 0px;
     border-radius: 50px;
     display: flex;
@@ -68,7 +65,7 @@ h1 {
     background-color: black;
     color: rgb(253, 236, 54);
     margin: 16px auto;
-    border-color: rgb(253, 236, 54);
+    border: solid 1px rgb(253, 236, 54);
 }
 .btn:hover{
     transform: scale(1.2);
@@ -119,4 +116,65 @@ img {
 .cocktail__method{
     width: 100%;
     max-width: 750px;
+}
+
+@media(max-width: 1024px){
+    h1{
+        font-size: 48px;
+    }
+    .button__desc{
+        font-size: 48px;
+    }
+    .cocktail__image:hover{
+        transform: scale(1.1);
+    }
+    .cocktail__info{
+        margin-left: 16px;
+    }
+}
+
+@media(max-width: 728px){
+    h1{
+        font-size: 36px;
+    }
+    .button__desc{
+        font-size: 36px;
+    }
+    .cocktail__image:hover{
+        transform: scale(1.1);
+    }
+    .cocktail__info{
+        margin-left: 16px;
+    }
+    .cocktail{
+        font-size: 12px;
+    }
+    .cocktail__name{
+        font-size: 28px;
+    }
+    .retry{
+        width: 100px;
+        height: 60px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 450px){
+    h1{
+        font-size: 28px;
+    }
+    .button__desc{
+        font-size: 24px;
+    }
+    .cocktail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cocktail__image{
+        width: 100%;
+        max-width: 225px;
+        height: 100%;
+        max-height: 225px; 
+    }
 }
