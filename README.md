@@ -1,42 +1,31 @@
-Random Cocktail Generator 🍹 
+# Random Cocktail Generator 🍹 
 
 A Node.js and EJS project that generates a random cocktail, perfect for when you're learning backend development and want to mix a little fun with code! 
 
   
+## Table of Contents 📖 
 
-Table of Contents 📖 
-
-About the Project 
-
-Features 
-
-Tech Stack 
-
-Getting Started 
-
-Screenshots 
-
-Contributing 
-
-Contact 
-
-License 
+- [Description📝](#description)
+- [Features✨](#features)
+- [Tech Stack🛠️](#tech-stack)
+- [Getting Started🛠️](#getting-started)
+- [Screenshots 📸](#screenshots)
+- [Code Highlights🔍](#code-highlights)
+- [Contributing🤝](#contributing)
+- [Contact📧](#contact)
+- [License⚖️](#license)
 
   
-
-1. About the Project 📝 
+## Description 
 
 This Random Cocktail Generator fetches data from TheCocktailDB API to suggest a random cocktail, including its ingredients, measurements, and preparation method. 
-
-  
 
 Purpose: 
 
 Built while learning Node.js and EJS, this project showcases server-side rendering and dynamic content generation. 
 
   
-
-2. Features ✨ 
+## Features
 
 Fetches random cocktails from an external API. 
 
@@ -53,8 +42,7 @@ Preparation instructions
 User-friendly interface with a "Choose Your Poison" button to start and a "Try Again" button for refreshing. 
 
  
-
-3. Tech Stack 🛠️ 
+## Tech Stack
 
 Frontend: EJS, CSS 
 
@@ -64,7 +52,7 @@ API: TheCocktailDB API
 
   
 
-4. Getting Started 🛠️ 
+## Getting Started
 
 Prerequisites: 
 
@@ -96,7 +84,7 @@ Installation Steps:
    ```
  
 
-Code Highlights 🔍 
+## Code Highlights 
 
 Node.js API Integration: 
 ```javascript
@@ -126,7 +114,8 @@ EJS Template Logic for Ingredients:
 <% } %>
 ```
 
-5. Screenshots 📸 
+## Screenshots
+
 
 ![Cocktail Generator Home](https://github.com/user-attachments/assets/52b80939-1b94-43eb-90e3-65f25f92aa53)
 
@@ -134,8 +123,7 @@ EJS Template Logic for Ingredients:
 ![Cocktail Generator](https://github.com/user-attachments/assets/f5448c7d-9376-4a03-9615-fd997fb71324)
 
    
-
-6. Contributing 🤝 
+## Contributing
 
 Contributions are welcome! To contribute: 
 
@@ -149,12 +137,11 @@ Push to the branch (git push origin feature/YourFeature).
 
 Create a pull request. 
 
-7. Contact 📧 
+## Contact 
 
 Ismaa'eel – www.linkedin.com/in/ismaaeel-fahmay – fahmay17@gmail.com
 
   
-
-8. License ⚖️ 
+## License 
 
 This project does not have a license. If you'd like to use the code, please contact me for permission.   
