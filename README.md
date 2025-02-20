@@ -64,7 +64,7 @@ Installation Steps:
 
 1. Clone the repository (bash): 
   ```bash
-   git clone https://github.com/yourusername/random-cocktail-generator.git  
+   git clone https://github.com/KnightRider-13/Cocktail-Generator.git
    cd random-cocktail-generator
   ```
 
